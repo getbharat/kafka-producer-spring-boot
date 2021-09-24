@@ -20,3 +20,15 @@ kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic Kafka_Examp
 
 ## Kafaka Producer 
 kafka-console-producer.bat --broker-list localhost:9092 --topic Kafka_Example
+
+
+## Delete Kafka Topic 
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic 'Kafka.*'
+
+
+## To see the list of Topics 
+kafka-topics.bat --list --zookeeper localhost:2181
+
+
+## Kafka topic location
+In windows, C:\tmp\kafka-logs has topic directories.
